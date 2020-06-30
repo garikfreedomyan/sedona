@@ -1,0 +1,1180 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+
+	background-color: rgb(242,242,242);
+}
+
+/* Убираем Падинги и Маргины у всех элементов  а так же скрываем ненужные надписи*/
+.main-header,
+.header-navigation,
+.site-navigation, 
+.main-block,
+section,
+div,
+footer,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Основной контейнер центровщик */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Стилизация понели навигации по сайту (header) ---------- */
+.main-header,
+.header-navigation,
+.site-navigation {
+	width: 1200px;
+	height: 56px;
+}
+
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.site-navigation li {
+	position: relative;
+	width: 240px;
+	text-align: center;
+}
+
+
+.site-navigation a {
+	height: 56px;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+.site-navigation a img {
+	position: absolute;
+	top: -28px;
+	left: 51px;
+
+}
+/* ----------  КОНЕЦ ---------- */ 
+
+/* ---------- Стилизация блока с логотипами и фотографии с видом на Сидону ---------- */
+.greetings-block {
+	width: 1200px;
+	height: 508px;
+	
+	background-color: #a5c6dc;
+	background-image: url(../IMG/sidona-and-titels.jpg);
+	background-repeat: no-repeat; 
+	background-position: 0 -56px;
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+/* ---------- Стилизация блока с Заголовком и Слоган ---------- */
+.tagline-block {
+	width: 1200px;
+	height: 216px;
+	box-sizing: border-box;
+	padding: 61px 353px 55px 353px;
+
+	text-align: center;
+}
+
+.tagline-block h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 26px;
+
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+.tagline-block p {
+	padding: 0;
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+/* ---------- Стилизация блока 5 причин для посещения Седоны ---------- */
+.reasons-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+}
+
+.reason-block {
+	width: 400px;
+	height: 256px;
+
+	padding: 47px 46px 61px 46px;
+	margin: 0;
+	box-sizing: border-box;
+
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.reason-block h3 {
+	font-size: 21px;
+	line-height: 21px;
+
+	margin: 0;
+	margin-bottom: 22px;
+	padding: 0;
+}
+
+.reason-block2  {
+	position: relative;
+	height: 330px;
+	padding: 161px 46px 83px 46px;
+}
+
+.reason-block2 h3 {
+	margin-bottom: 24px;
+}
+
+.reason-block span,
+.reason-block p {
+	font-size: 14px;
+	line-height: 21px;
+
+	margin: 0;
+	padding: 0;
+}
+
+.reason-block p {
+	margin-top: 20px;
+}
+
+.reason-block-blue {
+	background-color: #81b3d2;
+	color: white;
+}
+
+.reason-block-gray {
+	background-color: #f1f1f1;
+}
+
+/*Добавляем иконки советов*/
+.advice1::before {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 72px;
+
+	position: absolute;
+	top: 60px;
+	left: 162px;
+
+	background-image: url(../IMG/icon-1.svg);
+	background-repeat: no-repeat;
+}
+
+.advice2::before {
+	content: "";
+	display: block;
+	width: 74px;
+	height: 70px;
+
+	position: absolute;
+	top: 61px;
+	left: 161px;
+
+	background-image: url(../IMG/icon-2.svg);
+	background-repeat: no-repeat;
+}
+
+.advice3::before {
+	content: "";
+	display: block;
+	width: 64px;
+	height: 76px;
+
+	position: absolute;
+	top: 56px;
+	left: 168px;
+
+	background-image: url(../IMG/icon-3.svg);
+	background-repeat: no-repeat;
+}
+
+/*Убираем отступы после картинок*/
+.reason-block-img {
+	font-size: 0;
+	line-height: 0;
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+/* ---------- Стилизация блока бронирования ---------- */
+.booking-block {
+	width: 1200px;
+	height: 764px;
+	box-sizing: border-box;
+	padding-top: 50px;
+
+	text-align: center;
+}
+
+.booking-block span {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.booking-block p {
+	font-size: 14px;
+	line-height: 24px;
+
+	padding: 0;
+	margin: 24px 0 47px 0;
+}
+
+.booking-block .search-btn {
+	margin: 0;
+	padding: 0;
+	border: none;
+	
+	width: 568px;
+	height: 86px;
+	
+	background-color: #766357;
+
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+
+/* ---------- Стилизация формы бронирования отеля ---------- */
+/* Задаем общие параметры */
+.search-form {
+	position: relative;
+}
+
+.booking-form-block {
+	display: none;
+	position: absolute;
+	top: 86px;
+	left: 316px;
+
+	width: 568px;
+	height: 395px;
+	padding: 55px;
+	margin: 0;
+	box-sizing: border-box;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+
+	background-color: white;
+	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+	
+}
+
+/* Убираем маргины, бордэры и падинги*/
+.booking-form-block form,
+.booking-form-block p,
+.booking-form-block label,
+.booking-form-block input,
+.booking-form-block button {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Задаем общие параметры  текста для инпутов и цвет фона*/
+.booking-form-block input {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-transform: uppercase;
+
+	background-color: rgb(242, 242, 242);
+}
+/* Задаем размеры и падинги для инпутов отвечающих за дату заеза и отъезда из отеля*/
+.booking-form .dateIn, 
+.booking-form .dateOut {
+	width: 346px;
+	height: 38px;
+	padding: 12px 39px 10px 13px;
+}
+
+/* Задаем отступы после инпутов */
+.booking-form .dateIn-block {
+	margin-bottom: 29px;
+	position: relative;
+}
+
+.booking-form .dateOut-block {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.booking-form .persons-block {
+	margin-bottom: 54px;
+	text-align: left;
+}
+
+/* Задаем параметры для инпутов определяюих кол-во постояльцев*/
+.booking-form .adults,
+.booking-form .kids {
+	width: 114px;
+	height: 38px;
+	padding: 12px 30px 10px 30px;
+	text-align: center;
+}
+
+/* Стилизуем кнопку отправки формы */
+.send-btn {
+	width: 458px;
+	height: 58px;
+	padding: 18px 5px 16px 5px;
+	box-sizing: border-box;
+
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #81b3d2;
+}
+
+/* Задаем отступы между лейблами и инпутами чтобы они не прилипали друг к другу*/
+.booking-form .dateIn-label {
+	margin-right: 17px;
+}
+.booking-form .dateOut-label {
+	margin-right: 14px;
+}
+.booking-form .adults-label {
+	margin-right: 36px;
+}
+.booking-form .adults {
+	margin-right: 51px;
+}
+.booking-form .kids-label {
+	margin-right: 22px;
+}
+
+/* Вставляем иконки календариков в инпуты */
+.booking-form-block .dateIn-calendar {
+	display: block;
+	width: 38px;
+	height: 38px;
+	padding: 8px 9px 8px 8px;
+	box-sizing: border-box;
+
+	position: absolute;
+	top: 55px;
+	right: 55px;
+
+	cursor: pointer;
+} 
+.booking-form-block .dateOut-calendar {
+	display: block;
+	width: 38px;
+	height: 38px;
+	padding: 8px 9px 8px 8px;
+	box-sizing: border-box;
+
+	position: absolute;
+	top: 122px;
+	right: 55px;
+
+	cursor: pointer;
+} 
+
+
+/* Вставляем иконки плюсов и мунусов в инпуты */
+.booking-form-block .kids-plus {
+	content: "+";
+	display: block;
+	width: 35px;
+	height:38px;
+
+	position: absolute;
+	top: 190px;
+	right: 56px;
+	
+	font-size: 25px;
+	color: rgb(169, 169, 169);
+	line-height: 38px;
+	text-align: center;
+	vertical-align: middle;
+
+	cursor: pointer;
+}
+.booking-form-block .kids-minus {
+	content: "-";
+	display: block;
+	width: 35px;
+	height:38px;
+
+	position: absolute;
+	top: 190px;
+	right: 135px;
+	
+	font-size: 25px;
+	color: rgb(169, 169, 169);
+	line-height: 38px;
+	text-align: center;
+	vertical-align: middle;
+
+	cursor: pointer;
+}
+
+.booking-form-block .adults-plus {
+	content: "+";
+	display: block;
+	width: 35px;
+	height:38px;
+
+	position: absolute;
+	top: 190px;
+	right: 289px;
+	
+	font-size: 25px;
+	color: rgb(169, 169, 169);
+	line-height: 38px;
+	text-align: center;
+	vertical-align: middle;
+
+	cursor: pointer;
+}
+.booking-form-block .adults-minus {
+	content: "-";
+	display: block;
+	width: 35px;
+	height:38px;
+
+	position: absolute;
+	top: 190px;
+	right: 367px;
+	
+	font-size: 25px;
+	color: rgb(169, 169, 169);
+	line-height: 38px;
+	text-align: center;
+	vertical-align: middle;
+
+	cursor: pointer;
+}
+
+
+/* ---------- КОНЕЦ ---------- */
+
+
+/* ---------- Стилизация Футера ---------- */
+
+.main-footer {
+	display: flex;
+	align-items: center;
+
+	position: relative;
+	width: 1200px;
+	height: 120px;
+	padding: 35px 101px 36px 132px;
+	box-sizing: border-box;
+
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer span {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+}
+
+.main-footer ul {
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 150px;
+  height: 48px;
+  margin: 0 auto 0 256px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.main-footer .social-button {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+
+	width: 46px;
+	height: 48px;
+
+	background-color: #81b3d2;
+}
+
+.main-footer .copyright {	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 197px;
+	height: 41px;
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+}
+
+.copyright a {
+	height: 41px;
+}
+/* ---------- КОНЕЦ ---------- */
+
+
+/*Стилизация элементов при наведении и активном состоянии*/
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-block .search-btn:hover {
+	background-color: #604e43;
+}
+.booking-block .search-btn:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer .social-button:hover {
+	background-color: #669ec0;
+}
+.main-footer .social-button:active {
+	background-color: #5496bd;
+}
+.social-button:active svg path {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
+.copyright a:hover svg path,
+.copyright a:hover svg rect {
+	fill: #81b3d2;
+}
+.copyright a:active svg path,
+.copyright a:active svg rect {
+	fill: #bdbbbc;
+}
+
+.booking-form-block input:hover {
+	background-color: rgb(235, 235, 235);
+}
+.booking-form-block input:focus {
+	background-color: white;
+	box-shadow: inset 0 0 0 2px rgb(229, 229, 229);
+	outline: none;
+}
+
+.booking-form-block .sign-btn:hover,
+.booking-form-block .sign-btn:hover path,
+.booking-form-block .sign-btn:hover rect {
+	color: black;
+	fill: black;
+}
+.booking-form-block .sign-btn:active,
+.booking-form-block .sign-btn:active path,
+.booking-form-block .sign-btn:active rect {
+	color: rgb(129, 179, 210);
+	fill: rgb(129, 179, 210);
+}
+
+.send-btn:hover {
+	background-color: #669ec0;
+}
+.send-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes open-form {
+  0% {opacity: 0;}
+  100% {opacity: 100%;}
+}
+
+.modal-show {
+  display: block;
+  animation-name: open-form;
+  animation-duration: 0.6s;
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+
+/*-------------------------- Стилизация страницы подбора гостиниц -------------------------*/
+/* Стилизация блока с фильтром для подбора гостиниц */
+.hotels-filter-block,
+.hotels-filter-block form,
+.hotels-filter-block div,
+.hotels-filter-block p,
+.hotels-filter-block input,
+.hotels-filter-block label {
+	padding: 0;
+	margin: 0;
+}
+
+.hotels-page .hotels-filter-block {
+	width: 1200px;
+	height: 217px;
+	padding: 27px 72px 31px;
+	box-sizing: border-box;
+	
+	background-color: rgb(76, 125, 167);
+	background-image: url('../IMG/blurred-background.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 16%;
+}
+
+.hotels-filter-block .filter-form {
+	display: flex;
+	width: 1056px;
+}
+
+.checkbox-block .checkbox-caption {
+	margin-bottom: 25px;
+
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: white;
+}
+
+.checkbox-block .checkbox-item {
+	height: 23px;
+	padding-left: 40px;
+	margin-bottom: 23px;
+
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: white;
+}
+
+.filter-form .goods-checkbox {
+	margin-right: 123px;
+}
+
+.checkbox-block input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox-item label {
+	position: relative;
+	cursor: pointer;
+	padding-top: 2px;
+}
+
+/* Создание чекбокса с собственым дизайном */
+.checkbox-item label::before {
+	position: absolute;
+	top: 0;
+	left: -40px;
+	z-index: 1;
+	width: 19px;
+	height: 19px;
+	border: 2px solid white;
+	border-radius: 3px;
+	content: "";
+}
+
+.checkbox-item input[type="checkbox"]:checked ~ label::after {
+	position: absolute;
+	top: 2px;
+  	left: -35px;
+  	z-index: 2;
+  	border: 4px solid white;
+  	border-radius: 3px;
+  	content: "";
+  	width: 17px;
+ 	height: 7px;
+	border-top-style: none;
+	border-right-style: none;
+	transform: rotate(-45deg);
+}
+
+/* Конец*/
+
+.hotels-filter-block .hotel-type-checkbox {
+	margin-right: auto;
+}
+
+/* Стилизация блока с диапазоном цены на отель */
+
+.hotels-filter-block .price-filter-block {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.price-filter-block .cost-caption {
+	display: block;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: white;
+
+	margin-bottom: 10px;
+}
+
+.price-filter-block .min-max-block {
+	display: flex;
+	align-items: center;
+
+	width: 318px;
+	height: 36px;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 5px 0 5px 65px;
+	box-sizing: border-box;
+
+	margin-bottom: 10px;
+}
+.price-filter-block .min-max-block,
+.price-filter-block input {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: white;
+}
+
+.min-max-block input {
+	background-color: transparent;
+	border: none;
+	width: 37px;
+	height: 20px;
+	padding-left: 4px;
+}
+
+.min-max-block .min-price {
+	margin-right: 35px;
+}
+
+.min-max-block .separator {
+	width: 0;
+	height: 20px;
+	border: 1px solid white;
+	margin-right: 52px;
+}
+/* Создание "Range" собственого производства */
+
+.price-filter-block .range-block {
+	position: relative;
+	width: 318px;
+	height: 24px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.range-block .long-line {
+	position: absolute;
+	top: 10px;
+	left: 1px;
+
+	width: 317px;
+	height: 0;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+}
+
+.range-block .short-line {
+	position: absolute;
+	top: 10px;
+	left: 21px;
+
+	width: 232px;
+	height: 0;
+	border: 1px solid rgba(255, 255, 255, 1);
+	box-sizing: border-box;
+}
+
+.range-block .circle1 {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+
+	width: 4px;
+	height: 4px;
+	border: 8px solid rgba(255, 255, 255, 1);
+	border-radius: 50%;
+
+	background-color: rgb(171, 171, 171);
+	box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+.range-block .circle2 {
+	position: absolute;
+	top: 1px;
+	left: 253px;
+
+	width: 4px;
+	height: 4px;
+	border: 8px solid rgba(255, 255, 255, 1);
+	border-radius: 50%;
+
+	background-color: rgb(171, 171, 171);
+	box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Конец */
+
+.price-filter-block .submit-btn {
+	position: absolute;
+	left: 85px;
+	
+	width: 137px;
+	height: 36px;
+	border: 2px solid white;
+	border-radius: 2px;
+	box-sizing: border-box;
+
+	background-color: transparent;
+
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+/* ---------- Конец ---------- */
+
+
+/* ---------- Стилизация блока сортировки найденых отелей ---------- */
+.hotels-block .hotels-sort-block {
+	display: flex;
+
+	height: 87px;
+	width: 1200px;
+	padding: 30px 72px;
+	margin: 0;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	box-sizing: border-box;
+}
+
+.hotels-sort-block span {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+
+	margin-right: 47px;
+}
+
+.hotels-sort-block .sort-method {
+	display: flex;
+
+	font-size: 12px;
+	line-height: 18px;
+	color: black;
+
+	margin-right: auto;
+	padding-top: 6px;
+}
+
+.sort-method .method-list {
+	display: flex;
+	
+	margin: 0;
+	margin-left: 40px;
+
+	list-style: none;
+}
+
+.method-list li {
+	margin: 0;
+	margin-right: 33px;
+}
+
+.method-list a {
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: underline dotted #81b3d2;
+}
+
+.method-list .chosen-method {
+	color: #81b3d2;
+	text-decoration: none;
+	cursor: default;
+}
+
+.hotels-sort-block .up-down {
+	display: inline-block;
+	width: 44px;
+	height: 11px;
+	margin: 0;
+	padding: 0;
+	padding-top: 2px;
+}
+
+.up-down svg {
+	margin-left: 9px;
+}
+
+.up-down .chosen-direction path {
+	fill: rgb(129, 179, 210);
+}
+
+/* ---------- КОНЕЦ ---------- */
+
+
+/* ---------- Стилизация cписка найденых отелей ---------- */
+.list-item,
+.list-item a,
+.list-item div,
+.list-item p, 
+.list-item span,
+.list-item h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.list-item {
+	display: flex;
+
+	width: 1200px;
+	height: 151px;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	margin: 0;
+	padding: 25px 72px 30px;
+	box-sizing: border-box;
+}
+
+.list-item .hotel-photo {
+	margin-right: 30px;
+	padding-top: 5px;
+}
+
+.list-item .hotel-info {
+	margin-right: auto;
+}
+
+.list-item .hotel-name {
+	display: inline-block;
+
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+
+	margin-bottom: 7px;
+}
+
+.list-item .type-and-price-block {
+	display: flex;
+	justify-content: space-between;
+
+	width: 182px;
+	margin-bottom: 14px;
+}
+
+.type-and-price-block span {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+.btns-block .more-info-btn {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	padding: 3px 17px 0px 17px;
+	margin: 0 3px 0 0;
+	box-sizing: border-box;
+	background-color: rgb(129, 179, 210);
+
+	color: white;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.btns-block .booking-btn {
+	display: inline-block;
+	width: 142px;
+	height: 27px;
+	padding: 3px 17px 0px 17px;
+	box-sizing: border-box;
+	background-color: rgb(119, 99, 87);
+
+	color: white;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.list-item .rating-block {
+	text-align: right;
+}
+
+.rating-block .stars {
+	margin-top: 4px;
+	margin-bottom: 40px;
+}
+
+
+.rating-block .rating {
+	width: 110px;
+	height: 27px;
+	padding: 3px 0px 0px 0px;
+	box-sizing: border-box;
+	background-color: rgb(242, 242, 242);
+	
+	text-align: center;
+	color: rgb(102, 102, 102);
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+/* ---------- Конец ---------- */
+
+/* Добавление интерактивности элементам а стринице "Гостиницы"*/
+
+.checkbox-item input[type="checkbox"]:disabled ~ label::before,
+.checkbox-item input[type="checkbox"]:disabled ~ label::after {
+	border-color: rgb(106, 106, 106);
+}
+
+.range-block .circle1:hover {
+	top: 0;
+	left: 0;
+
+	border: 9px solid rgba(255, 255, 255, 1);
+
+	cursor: pointer;
+}
+
+.range-block .circle2:hover {
+	top: 0;
+	left: 252px;
+	
+	border: 9px solid rgba(255, 255, 255, 1);
+
+	cursor: pointer;
+}
+
+.price-filter-block .submit-btn:hover {
+	background-color: white;
+	color: black;
+}
+
+.site-navigation .active-page,
+.site-navigation .active-page:hover,
+.site-navigation .active-page:active {
+	color: #766357;
+	cursor: default;
+}
+
+
+.method-list a:hover {
+	color: #81b3d2;
+}
+
+.method-list a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.up-down svg:hover path {
+	fill: black;
+}
+
+.up-down svg:active path {
+	fill: #81b3d2;
+}
+
+.up-down .chosen-direction:hover path {
+	fill: #81b3d2;
+}
+
+.btns-block .more-info-btn:hover {
+	background-color: rgb(102, 158, 192);
+}
+
+.btns-block .more-info-btn:active {
+	background-color: rgb(84, 150, 189);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.btns-block .booking-btn:hover {
+	background-color: rgb(96, 78, 67);
+}
+
+.btns-block .booking-btn:active {
+	background-color: rgb(80, 62, 51);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-info .hotel-name:hover {
+	color: #81b3d2;
+}
+
+.hotel-info .hotel-name:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Конец ---------- */
